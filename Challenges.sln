@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foreach", "Foreach\Foreach.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateAndTime", "DateTime\DateAndTime.csproj", "{50CF229E-3197-4D86-AA4D-D6635950B77B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CopyObjectsUI", "CopyObjectsUI\CopyObjectsUI.csproj", "{0A78C0C7-942A-4825-BE99-9CD6B57A6533}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{50CF229E-3197-4D86-AA4D-D6635950B77B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{50CF229E-3197-4D86-AA4D-D6635950B77B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{50CF229E-3197-4D86-AA4D-D6635950B77B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A78C0C7-942A-4825-BE99-9CD6B57A6533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A78C0C7-942A-4825-BE99-9CD6B57A6533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A78C0C7-942A-4825-BE99-9CD6B57A6533}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A78C0C7-942A-4825-BE99-9CD6B57A6533}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
