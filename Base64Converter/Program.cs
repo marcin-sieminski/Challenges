@@ -6,6 +6,32 @@ namespace Base64Converter
     {
         public static void Main()
         {
+            var runAgain  = true;
+            do
+            {
+                Console.Clear();
+                Console.WriteLine("Choose an option: \n1. Encode text \n2. Encode binary file \n3. Exit");
+                var option = Console.ReadKey();
+                Console.WriteLine();
+
+                switch (option.KeyChar)
+                {
+                    case '1':
+                        EncodeDecodeText();
+                        break;
+                    case '2':
+                        EncodeDecodeBinaryFile();
+                        break;
+                    default:
+                        runAgain = false;
+                        break;
+                }
+            } while (runAgain);
+        }
+
+        private static void EncodeDecodeText()
+        {
+            Console.Clear();
             Console.WriteLine("Enter a text to encode (Base64):");
             var textToEncode = Console.ReadLine();
 
@@ -14,25 +40,31 @@ namespace Base64Converter
 
             Console.WriteLine("\nText to encode:");
             Console.WriteLine(textToEncode);
-            Console.WriteLine("Encoded text (Base64):");
+            Console.WriteLine("\nEncoded text (Base64):");
             Console.WriteLine(encodedText);
-            Console.WriteLine("Decoded text:");
+            Console.WriteLine("\nDecoded text:");
             Console.WriteLine(decodedText);
 
-            //EncodeDecodeBinaryFileExample();
-
-            Console.WriteLine("\nPress enter do exit.");
+            Console.WriteLine("\nPress enter to continue.");
             Console.ReadLine();
         }
 
-        private static void EncodeDecodeBinaryFileExample()
+        private static void EncodeDecodeBinaryFile()
         {
-            const string inputFileName = "sun.png";
-            const string encodedFileName = "sun.txt";
-            const string decodedFileName = "sun_decoded.png";
+            Console.Clear();
+            Console.WriteLine("Enter an input file name to encode (Base64):");
+            var inputFileName = Console.ReadLine();
+
+            var encodedFileName = inputFileName + ".txt";
+            var decodedFileName = "decoded_" + inputFileName;
 
             Base64Converter.ConvertFileToBase64(inputFileName, encodedFileName);
             Base64Converter.ConvertFileFromBase64(encodedFileName, decodedFileName);
+
+            Console.WriteLine("\nFile successfully encoded.");
+
+            Console.WriteLine("\nPress enter to continue.");
+            Console.ReadLine();
         }
     }
 }
