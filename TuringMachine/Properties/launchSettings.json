@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "TuringMachine": {
+      "commandName": "Project",
+      "commandLineArgs": "program.txt tape.txt"
+    }
+  }
+}

@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimeNumbers", "PrimeNumber
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProcessKillerTool", "ProcessKillerTool\ProcessKillerTool.csproj", "{503AF9CF-A73C-491B-88B1-2184BCAC71BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Base64Converter", "Base64Converter\Base64Converter.csproj", "{83336D51-B639-45AB-AA11-890524738089}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Base64Converter", "Base64Converter\Base64Converter.csproj", "{83336D51-B639-45AB-AA11-890524738089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TuringMachine", "TuringMachine\TuringMachine.csproj", "{EE47C6E6-D639-4D85-A4A3-10C889FE021D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{83336D51-B639-45AB-AA11-890524738089}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83336D51-B639-45AB-AA11-890524738089}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83336D51-B639-45AB-AA11-890524738089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE47C6E6-D639-4D85-A4A3-10C889FE021D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE47C6E6-D639-4D85-A4A3-10C889FE021D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE47C6E6-D639-4D85-A4A3-10C889FE021D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE47C6E6-D639-4D85-A4A3-10C889FE021D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
